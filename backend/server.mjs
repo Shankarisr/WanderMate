@@ -8,7 +8,6 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3000;
-//const apiKey = process.env.GOOGLE_GEN_AI_API_KEY || 'AIzaSyC6JDzPAaYEit1WLf9pTSjELdefvctBWbE';
 const apiKey = process.env.API_KEY;
 
 
