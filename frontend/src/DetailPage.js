@@ -22,7 +22,7 @@ const DetailPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3011/api/travel-details', {
+            const response = await fetch('http://localhost:3000/api/travel-details', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

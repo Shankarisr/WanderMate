@@ -579,7 +579,7 @@ const LanguageLearningPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3050/api/language-learning', {
+            const response = await fetch('http://localhost:3000/api/language-learning', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

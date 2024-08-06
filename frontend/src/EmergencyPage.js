@@ -303,7 +303,7 @@ const EmergencyPage = () => {
             return;
         }
         try {
-            const response = await fetch('http://localhost:3008/api/emergency', {
+            const response = await fetch('http://localhost:3000/api/emergency', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

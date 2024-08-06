@@ -295,7 +295,7 @@ const CulturePage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3007/api/culture', {
+      const response = await fetch('http://localhost:3000/api/culture', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

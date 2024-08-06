@@ -43,7 +43,7 @@ const TranslatorPage = () => {
     const handleTranslate = async () => {
         try {
             // Replace with actual API call
-            const response = await fetch('http://localhost:300/api/translate', {
+            const response = await fetch('http://localhost:3000/api/translate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

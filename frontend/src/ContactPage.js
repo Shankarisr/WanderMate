@@ -8,13 +8,13 @@ const ContactPage = () => {
         <ContactDetails>
           <h1>Contact Us</h1>
           <ContactInfo>
-            <p>Email: <a href="mailto:support@wanderMate.com">shankarisr07@gmail.com</a></p>
-            <p>Phone: <a href="tel:+15551234567">+91 9677804540</a></p>
+            <p>Email: <a href="mailto:support@wanderMate.com">shanksofficial07@gmail.com</a></p>
+            <p>Phone: <a href="tel:+15551234567">+91 9677825198</a></p>
             <p>Address: Chennai , India</p>
             
             <SocialMedia>
-              <a href="https://github.com/Shankarisr" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/shankari-s-r-527624278/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </SocialMedia>
           </ContactInfo>
         </ContactDetails>
