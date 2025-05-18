@@ -57,7 +57,8 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3080;
-const apiKey = "AIzaSyC6JDzPAaYEit1WLf9pTSjELdefvctBWbE";
+const apiKey = API_KEY;
+
 
 if (!apiKey) {
     console.error("API key is missing in environment variables.");

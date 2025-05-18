@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3008; // Use port 3008 for emergency
-const apiKey = "AIzaSyC6JDzPAaYEit1WLf9pTSjELdefvctBWbE"; // Fetch from environment variables
+const apiKey = API_KEY;
 
 if (!apiKey) {
     console.error("API key is missing in environment variables.");

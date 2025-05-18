@@ -8,8 +8,7 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3006; // Use port 3006 for itinerary
-const apiKey = "AIzaSyC6JDzPAaYEit1WLf9pTSjELdefvctBWbE"; // Use environment variable for API key
-
+const apiKey = API_KEY;
 if (!apiKey) {
     console.error("API key is missing in environment variables.");
     process.exit(1);
