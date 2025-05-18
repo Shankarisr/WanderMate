@@ -71,29 +71,29 @@ const Container = styled.div`
   font-family: "Arial", sans-serif;
 `;
 
-const HeroSection = styled.section`
-  background-image: url("https://source.unsplash.com/1600x900/?travel");
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+// const HeroSection = styled.section`
+//   background-image: url("https://source.unsplash.com/1600x900/?travel");
+//   background-size: cover;
+//   background-position: center;
+//   height: 60vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// `;
 
-const HeroText = styled.div`
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  h1 {
-    margin: 0;
-    font-size: 3em;
-  }
-  p {
-    font-size: 1.2em;
-  }
-`;
+// const HeroText = styled.div`
+//   background: rgba(0, 0, 0, 0.5);
+//   padding: 20px;
+//   text-align: center;
+//   color: #fff;
+//   h1 {
+//     margin: 0;
+//     font-size: 3em;
+//   }
+//   p {
+//     font-size: 1.2em;
+//   }
+// `;
 
 const Features = styled.section`
   display: flex;
