@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import HomePage from './HomePage';
-import AboutPage from './AboutPage';
-import ItineraryPage from './ItineraryPage'; // Import ItineraryPage
-import TranslatorPage from './TraslatorPage';
-import CulturePage from './CulturePage';
+import HomePage from './components/HomePage';
+import AboutPage from "./components/AboutPage";
+import ItineraryPage from './components/ItineraryPage'; // Import ItineraryPage
+import TranslatorPage from './components/TraslatorPage';
+import CulturePage from "./components/CulturePage";
 import styled from 'styled-components';
-import EmergencyPage from './EmergencyPage';
-import PackingPage from './PackingPage';
-import LanguagePage from './LanguagePage'
-import AssistantPage from './AssistantPage';
-import FeaturesPage from './FeaturePage';
-import ContactPage from './ContactPage';
+import EmergencyPage from './components/EmergencyPage';
+import PackingPage from './components/PackingPage';
+import LanguagePage from './components/LanguagePage'
+import AssistantPage from './components/AssistantPage';
+import FeaturesPage from './components/FeaturePage';
+import ContactPage from './components/ContactPage';
 
 // Header Component
 const Header = () => {
