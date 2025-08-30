@@ -1,11 +1,11 @@
 import React from "react";
-import styled from "styled-components";
+import "./style.css";
 
 const AboutPage = () => {
   const content = {
     title: "About Us",
     description:
-      "Welcome to WanderMate, your ultimate travel companion designed to enhance every aspect of your journey. Whether you’re a seasoned traveler or exploring a new destination for the first time, WanderMate is here to make your adventures seamless, enriching, and memorable.",
+      "Welcome to WanderMate, your ultimate travel companion designed to enhance every aspect of your journey. Whether youâ€™re a seasoned traveler or exploring a new destination for the first time, WanderMate is here to make your adventures seamless, enriching, and memorable.",
     mission:
       "At WanderMate, we are passionate about simplifying travel planning and enriching travel experiences through innovative technology and thoughtful design. Our mission is to empower travelers with personalized tools and insights, making it easier to explore new cultures, discover hidden gems, and create unforgettable memories.",
     keyfeatures: [
@@ -37,7 +37,7 @@ const AboutPage = () => {
       {
         header: "Packing and Preparation Tips",
         content:
-          "Access personalized packing lists and preparation advice to ensure you’re ready for every adventure.",
+          "Access personalized packing lists and preparation advice to ensure youâ€™re ready for every adventure.",
       },
       {
         header: "Language Learning",
@@ -46,124 +46,38 @@ const AboutPage = () => {
       },
     ],
     callToAction:
-      "Join the WanderMate community today and embark on a journey of discovery, adventure, and connection. Whether you’re exploring bustling cities, serene landscapes, or hidden treasures, WanderMate is here to guide you every step of the way.",
+      "Join the WanderMate community today and embark on a journey of discovery, adventure, and connection. Whether you are exploring bustling cities, serene landscapes, or hidden treasures, WanderMate is here to guide you every step of the way.",
   };
 
   return (
-    <Container>
-      <Title>{content.title}</Title>
-      <Description>{content.description}</Description>
-      <Section>
-        <SubTitle>Our Mission</SubTitle>
-        <Mission>{content.mission}</Mission>
-      </Section>
-      <Section>
-        <SubTitle>Key Features</SubTitle>
-        <FeaturesList>
+    <div className="about-container">
+      <h1 className="about-title">{content.title}</h1>
+      <p className="about-description">{content.description}</p>
+
+      <section className="about-section">
+        <h2 className="about-subtitle">Our Mission</h2>
+        <p className="about-mission">{content.mission}</p>
+      </section>
+
+      <section className="about-section">
+        <h2 className="about-subtitle">Key Features</h2>
+        <ul className="features-list">
           {content.keyfeatures.map((feature, index) => (
-            <Feature key={index}>
-              <BulletPoint>&#8226;</BulletPoint>
-              <FeatureDetails>
-                <FeatureHeader>{feature.header}:</FeatureHeader>
-                <FeatureContent>{feature.content}</FeatureContent>
-              </FeatureDetails>
-            </Feature>
+            <li key={index} className="feature-item">
+              <span className="bullet-point">&#8226;</span>
+              <div className="feature-details">
+                <span className="feature-header">{feature.header}:</span>
+                <p className="feature-content">{feature.content}</p>
+              </div>
+            </li>
           ))}
-        </FeaturesList>
-      </Section>
-      <CallToAction>{content.callToAction}</CallToAction>
-      <Divider />
-    </Container>
+        </ul>
+      </section>
+
+      <p className="call-to-action">{content.callToAction}</p>
+      <hr className="divider" />
+    </div>
   );
 };
-
-// Styled Components
-const Container = styled.div`
-  padding: 40px;
-  font-family: "Arial", sans-serif;
-  max-width: 900px;
-  margin: auto;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-`;
-
-const Title = styled.h1`
-  color: #005a70;
-  font-size: 2.5em;
-
-  margin-bottom: 20px;
-`;
-
-const Description = styled.p`
-  font-size: 1.15em;
-  color: #555;
-
-  margin-bottom: 30px;
-`;
-
-const Section = styled.section`
-  margin-bottom: 30px;
-`;
-
-const SubTitle = styled.h2`
-  color: #005a70;
-  font-size: 2em;
-  margin-bottom: 10px;
-`;
-
-const Mission = styled.p`
-  font-size: 1.15em;
-  color: #333;
-  line-height: 1.6;
-`;
-
-const FeaturesList = styled.ul`
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-`;
-
-const Feature = styled.li`
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 15px;
-  font-size: 1.1em;
-  color: #333;
-`;
-
-const BulletPoint = styled.span`
-  font-size: 1.5em;
-  color: #005a70;
-  margin-right: 10px;
-`;
-
-const FeatureDetails = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const FeatureHeader = styled.span`
-  font-weight: bold;
-  color: #005a70;
-`;
-
-const FeatureContent = styled.p`
-  margin: 0;
-`;
-
-const CallToAction = styled.p`
-  font-size: 1.15em;
-  color: #005a70;
-  text-align: center;
-  font-weight: bold;
-`;
-
-const Divider = styled.hr`
-  border: none;
-  border-top: 2px solid #004d61;
-  margin: 40px auto 0;
-  width: 80%;
-`;
 
 export default AboutPage;
